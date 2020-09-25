@@ -1,0 +1,27 @@
+.mainTitle {
+  position: absolute;
+  width: 301px;
+  height: 42px;
+  top: 41px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+.container {
+  left: 10%;
+}
+.rightFloat {
+  float: right;
+}
+.buttonF {
+  width: 76px;
+  height: 48px;
+  top: 43px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.25);
+}
