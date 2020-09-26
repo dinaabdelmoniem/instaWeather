@@ -1,74 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
-.bg-image {
-  background-repeat: no-repeat;
-  background-position:  top;
-  position: absolute;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  background-image: url("./assets/images/background.jpg");
-}
-body,
-html {
-  font-family: "Work Sans", sans-serif;
-  color: #ffffff;
-  height: 100%;
-  margin: 0;
-}
-#overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-}
-.mat-tab-label {
-  height: 20px;
-  width: 54px;
-  color: #ffffff !important;
-  font-size: 14px !important;
-  font-weight: 600;
-  letter-spacing: 1.25px;
-  line-height: 20px;
-}
-
-.mat-tab-label-active {
-  height: 20px;
-  width: 97px;
-  color: #ffffff !important;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1.25px;
-  line-height: 20px;
-}
-
-.mat-tab-label {
-  height: 20px;
-  opacity: 1 !important;
-  width: 54px;
-  color: #ffffff !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  letter-spacing: 1.25px;
-  line-height: 20px;
-}
-
-.mat-ink-bar {
-  background-color: #ffffff !important;
-  height: 4px !important;
-  color: #ffffff !important;
-}
-.mat-tab-label-active {
-  height: 20px;
-  width: 97px;
-  color: #ffffff !important;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1.25px;
-  line-height: 20px;
-}
+@import "./styles/temp-tabs.scss";
+@import "./styles/colors-variables.scss";
+@import "./styles/home-container.scss";
+@import "./styles/main-fonts.scss";
+@import "./styles/small-screen.scss";

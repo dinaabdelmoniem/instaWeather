@@ -1,0 +1,60 @@
+@import "../styles/colors-variables.scss";
+.outer {
+  width: 100%;
+  height: 180px;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.outer {
+  div {
+    width: 130px;
+    float: none;
+    margin: 5px 0px 5px 0px;
+    display: inline-block;
+  }
+}
+::-webkit-scrollbar {
+  width: 200px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $main-text;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $hover;
+}
+
+.mat-tab-header {
+  border-color: $main-text !important;
+}
+.mat-tab-label {
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 1 !important;
+  color: $main-text !important;
+}
+
+.mat-ink-bar {
+  background-color: $main-text !important;
+  height: 4px !important;
+  color: $main-text !important;
+}
