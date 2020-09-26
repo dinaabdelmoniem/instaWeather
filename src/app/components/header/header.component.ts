@@ -3,16 +3,14 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-@Input() city ;
-@Input() weather;
-@Input() showCTemp;
-todayDate = new Date();
-  constructor() { }
+  @Input() city;
+  @Input() weather;
+  @Input() showCTemp;
+  todayDate = new Date();
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

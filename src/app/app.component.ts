@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherService } from './services/weather.service';
 import { weather } from './mocks/weatherMock';
-import {Weather} from './models/weather';
+import { Weather } from './models/weather';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,9 +17,7 @@ export class AppComponent implements OnInit {
     this.getWeather();
     this.getMyLocation();
   }
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
   /**
    * get weather accordding to user's location
    */
