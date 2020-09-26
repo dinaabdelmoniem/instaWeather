@@ -1,3 +1,5 @@
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HourlyComponent } from './hourly.component';
@@ -8,7 +10,8 @@ describe('HourlyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HourlyComponent ]
+      declarations: [ HourlyComponent ],
+      schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   });
@@ -16,6 +19,7 @@ describe('HourlyComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(HourlyComponent);
     component = fixture.componentInstance;
+    component.showCTemp = false;
     fixture.detectChanges();
   });
 
