@@ -1,12 +1,17 @@
-<div class="container" >
+<div class="container" *ngIf="showHome">
   <div class="col-12 ">
     <div class="row">
       <div class="mainTitle col-6">INSTAWEATHER</div>
 
-      <div class="col-12"> <button class="buttonF rightFloat" (click)="showCTemp = false">F</button>
-        <button class="buttonF rightFloat" (click)="showCTemp = true">C</button></div>
     </div>
+    <div class="row">
+      <div class="col-12"> <button [ngClass]="{
+    'activeButton':!showCTemp}" class="buttonF rightFloat btn" (click)="showCTemp = false">F</button>
+        <button class="buttonF rightFloat btn" [ngClass]="{
+      'activeButton':showCTemp}" (click)="showCTemp = true">C</button></div>
+    </div>
+
+    <app-header [city]="city" [weather]="weather" [showCTemp]="showCTemp"></app-header>
+    <app-heat-tabs [hourly]="weather.hourly.data" [daily]="weather.daily.data" [showCTemp]="showCTemp">
+    </app-heat-tabs>
   </div>
-  <app-header *ngIf="weather" [city]="city" [weather]="weather" [showCTemp]="showCTemp"></app-header>
-  <app-heat-tabs  *ngIf="weather" [hourly]="weather.hourly.data" [daily]="weather.daily.data" [showCTemp]="showCTemp"></app-heat-tabs>
-</div>
