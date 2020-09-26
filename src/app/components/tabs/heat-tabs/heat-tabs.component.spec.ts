@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { HeatTabsComponent } from './heat-tabs.component';
 
 describe('HeatTabsComponent', () => {
@@ -8,7 +8,8 @@ describe('HeatTabsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeatTabsComponent ]
+      declarations: [ HeatTabsComponent ],
+      schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   });
@@ -16,6 +17,7 @@ describe('HeatTabsComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(HeatTabsComponent);
     component = fixture.componentInstance;
+    component.showCTemp = false;
     fixture.detectChanges();
   });
 
